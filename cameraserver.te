@@ -1,3 +1,2 @@
-allow cameraserver gpu_device:chr_file rw_file_perms;
-
-allow cameraserver system_server:unix_stream_socket { read write };
+# perfd
+allow cameraserver mpctl_socket:dir search;

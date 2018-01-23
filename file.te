@@ -4,7 +4,6 @@ type sysfs_console_suspend, sysfs_type, fs_type;
 type sysfs_fingerprint, sysfs_type, fs_type;
 type sysfs_graphics, sysfs_type, fs_type;
 type sysfs_mdss_mdp_caps, sysfs_type, fs_type;
-type sysfs_msm_subsys, sysfs_type, fs_type;
 type sysfs_msm_subsys_restart, sysfs_type, fs_type;
 type sysfs_net, sysfs_type, fs_type;
 type sysfs_rmtfs, sysfs_type, fs_type;
@@ -16,6 +15,15 @@ type sysfs_pcc_profile, sysfs_type, fs_type;
 type sysfs_rtc, sysfs_type, fs_type;
 type sysfs_timekeep, sysfs_type, fs_type;
 type sysfs_odmcheck, sysfs_type, fs_type;
+type mpctl_socket, file_type, mlstrustedobject;
+type mpctl_data_file, file_type, data_file_type;
+type sysfs_scsi_host, fs_type, sysfs_type;
+type sysfs_devfreq, fs_type, sysfs_type;
+type sysfs_msm_perf, fs_type, sysfs_type;
+type sysfs_msm_power, fs_type, sysfs_type;
+type sysfs_lib, fs_type, sysfs_type;
+type sysfs_kgsl, sysfs_type, fs_type;
+type thermal_socket, file_type;
 
 type debugfs_clk, debugfs_type, fs_type;
 type debugfs_ion, debugfs_type, fs_type;
@@ -75,3 +83,13 @@ type irqbalance_socket, file_type;
 
 # /sys/kernel/boot_wlan/boot_wlan
 type sysfs_boot_wlan, fs_type, sysfs_type;
+# /data
+type perfd_data_file, file_type, data_file_type;
+
+# /proc
+type proc_kernel_sched, fs_type;
+
+# /sys
+type sysfs_msm_subsys, sysfs_type, fs_type;
+type sysfs_perf, sysfs_type, fs_type;
+type sysfs_power_management, sysfs_type, fs_type;

@@ -7,3 +7,6 @@ wc_transport.              u:object_r:wc_prop:s0
 persist.sys.timeadjust     u:object_r:timekeep_prop:s0
 adb.network.port.es        u:object_r:adbtcpes_prop:s0
 persist.dispcal.setting    u:object_r:dispcal_prop:s0
+ro.min_freq_0                 u:object_r:freq_prop:s0
+ro.min_freq_4                 u:object_r:freq_prop:s0
+ro.gpu.available_frequencies u:object_r:freq_prop:s0

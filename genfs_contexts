@@ -9,6 +9,11 @@ genfscon sysfs /devices/mdss_dsi_panel/pcc_profile    u:object_r:sysfs_pcc_profi
 genfscon sysfs /devices/virtual/smdpkt                u:object_r:sysfs_msm_subsys:s0
 
 genfscon sysfs /class/uio                                               u:object_r:sysfs_uio:s0
+genfscon sysfs /devices/soc/soc:qcom,cpubw/devfreq                      u:object_r:sysfs_devfreq:s0
+genfscon sysfs /devices/soc/soc:qcom,memlat-cpu0/devfreq                u:object_r:sysfs_devfreq:s0
+genfscon sysfs /devices/soc/soc:qcom,memlat-cpu4/devfreq                u:object_r:sysfs_devfreq:s0
+genfscon sysfs /devices/soc/soc:qcom,mincpubw/devfreq                   u:object_r:sysfs_devfreq:s0
+genfscon sysfs /module/msm_performance/workload_modes                   u:object_r:sysfs_msm_perf:s0
 genfscon sysfs /devices/soc/soc:bt_wcn3990                              u:object_r:sysfs_bluetooth_writable:s0
 genfscon sysfs /devices/soc/soc:qcom,gpubw                              u:object_r:sysfs_msm_subsys:s0
 genfscon sysfs /devices/soc/soc:qcom,kgsl-hyp                           u:object_r:sysfs_msm_subsys:s0
